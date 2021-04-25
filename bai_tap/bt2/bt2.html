@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Meters to Feets</h2>
+<input type="number" id="inputMeters"
+       onchange="changeMetertoFeet(this.value)"
+       oninput="changeMetertoFeet(this.value)"><br>
+<h3>Result: </h3>
+<h3 id="metertofeet"></h3>
+<hr>
+<h2>Feets to Meters</h2>
+<input type="number" id="inputFeets"
+       onchange="changeFeettoMeter(this.value)"
+       oninput="changeFeettoMeter(this.value)"> <br>
+<h3>Result: </h3>
+<h3 id="feettometer"></h3>
+<script>
+
+    function changeMetertoFeet(meter) {
+        meter = parseInt(meter)
+        feet = meter * 3.279
+        document.getElementById("metertofeet").innerHTML = "Result: "+feet + " feet"
+    }
+
+    function changeFeettoMeter(feet) {
+        feet = parseInt(feet)
+        meter = feet * 0.305
+        document.getElementById("feettometer").innerHTML = "Result: "+meter + "meter"
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let b = prompt('nhập a')
+  result = b
+  document.write(b + "!=" + factorial(b))
+  function factorial(b){
+    if (b==0) {
+      return 1
+    } while (b > 1) {
+      b--
+      result *=b
+    }
+    return result;
+  }
+</script>
+</body>
+</html>
